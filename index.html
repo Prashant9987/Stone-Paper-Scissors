@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainheading">
+        <h1 >Welcome</h1>
+    </div>
+    <div class="images">
+
+        <button class="buttonsnew"
+            id="stonebutton"
+            onclick="spsfn('Stone')">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.At55B00vxjh56AMvY4t2ZQAAAA&pid=Api&P=0&h=180"
+                alt=""></button>
+
+        <button class="buttonsnew"
+            id="paperbutton"
+            onclick="spsfn('Paper')">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.0gPDMc2eLvNq1MknlIdDZgAAAA&pid=Api&P=0&h=180"
+                alt=""></button>
+
+        <button class="buttonsnew"
+            id="scissorbutton"
+            onclick="spsfn('Scissor')"><img
+                src="https://tse3.mm.bing.net/th?id=OIP.UBL4HIAWxguMBR4a3Y0pyAAAAA&pid=Api&P=0&h=180"
+                alt=""></button>
+
+        <button class="buttonsnew"
+            id="resetbutton"
+            onclick="spsfn('reset')"><img
+                src="https://tse3.mm.bing.net/th?id=OIP.kKsbo7Jt6hjc5hF943SfDQHaHh&pid=Api&P=0&h=180"
+                alt=""></button>
+
+    </div>
+
+    <div class="interaction">
+        <div>
+            <div class="userchoice"
+                id="user">
+                <h1
+                    style="color: rgb(33, 123, 208);">
+                    Your Choice</h1>
+            </div>
+            <div
+                id="userimagegenerated">
+            </div>
+        </div>
+        <div>
+            <div class="computerchoice"
+                id="computer">
+                <h1
+                    style="color: rgb(33, 123, 208);">
+                    Computer Choice</h1>
+            </div>
+            <div
+                id="computerimagegenerated">
+            </div>
+        </div>
+
+    </div>
+    <div class="command" id="cd">
+        <button
+            class="btn btn-primary btn-lg">
+            Make Your Move
+        </button>
+
+    </div>
+
+    <div class="result">
+        <table
+            class="table table-bordered table-success custom-border border-primary"
+            id="rowid1">
+            <thead>
+                <tr>
+                    <th scope="col">Wins
+                    </th>
+                    <th scope="col">Lost
+                    </th>
+                    <th scope="col">Draw
+                    </th>
+                    <th scope="col">
+                        Games</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="cell1">0
+                    </th>
+                    <td id="cell2">0
+                    </td>
+                    <td id="cell3">0
+                    </td>
+                    <td id="cell4">0
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h1 style="text-align:center ;">Game
+        History</h1>
+    <div class="gameshistory">
+        <table
+            class="table table-bordered table-success custom-border border-primary"
+            id="rowid2">
+            <thead>
+                <tr>
+                    <th scope="col">Wins
+                    </th>
+                    <th scope="col">
+                        Lost</th>
+                    <th scope="col">Draw
+                    </th>
+                    <th scope="col">
+                        Games</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
